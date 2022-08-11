@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Implementation/eip",
+  "id": "Implementation/eip",
+  "title": "eip",
+  "description": "- [ ] # Verkle trie EIP draft",
+  "source": "@site/docs/Implementation/eip.md",
+  "sourceDirName": "Implementation",
+  "slug": "/Implementation/eip",
+  "permalink": "/docs/Implementation/eip",
+  "draft": false,
+  "editUrl": "https://github.com/ethereum/verkle-dev-website/docs/Implementation/eip.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Generating the CRS",
+    "permalink": "/docs/Implementation/crs"
+  },
+  "next": {
+    "title": "Implementation",
+    "permalink": "/docs/Implementation/summary"
+  }
+}

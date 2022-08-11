@@ -1,0 +1,24 @@
+{
+  "unversionedId": "theory/multipoint",
+  "id": "theory/multipoint",
+  "title": "IPA Multipoint",
+  "description": "Introduction",
+  "source": "@site/docs/theory/multipoint.md",
+  "sourceDirName": "theory",
+  "slug": "/theory/multipoint",
+  "permalink": "/docs/theory/multipoint",
+  "draft": false,
+  "editUrl": "https://github.com/ethereum/verkle-dev-website/docs/theory/multipoint.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dividing In Lagrange basis when one of the points is zero - Generalised",
+    "permalink": "/docs/theory/dividing_on_zero"
+  },
+  "next": {
+    "title": "Theory",
+    "permalink": "/docs/theory/summary"
+  }
+}

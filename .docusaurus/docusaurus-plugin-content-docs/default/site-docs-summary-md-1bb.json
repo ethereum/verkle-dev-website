@@ -1,0 +1,24 @@
+{
+  "unversionedId": "SUMMARY",
+  "id": "SUMMARY",
+  "title": "Summary",
+  "description": "",
+  "source": "@site/docs/SUMMARY.md",
+  "sourceDirName": ".",
+  "slug": "/SUMMARY",
+  "permalink": "/docs/SUMMARY",
+  "draft": false,
+  "editUrl": "https://github.com/ethereum/verkle-dev-website/docs/SUMMARY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Translate your site",
+    "permalink": "/docs/tutorial-extras/translate-your-site"
+  },
+  "next": {
+    "title": "Generating the CRS",
+    "permalink": "/docs/impl/crs"
+  }
+}

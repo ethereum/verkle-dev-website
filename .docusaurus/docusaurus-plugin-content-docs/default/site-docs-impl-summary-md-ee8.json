@@ -1,0 +1,24 @@
+{
+  "unversionedId": "impl/summary",
+  "id": "impl/summary",
+  "title": "Implementation",
+  "description": "Commitment Scheme (IPA Multipoint)",
+  "source": "@site/docs/impl/summary.md",
+  "sourceDirName": "impl",
+  "slug": "/impl/summary",
+  "permalink": "/docs/impl/summary",
+  "draft": false,
+  "editUrl": "https://github.com/ethereum/verkle-dev-website/docs/impl/summary.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "EIP",
+    "permalink": "/docs/impl/eip"
+  },
+  "next": {
+    "title": "Verkle Trie Documentation",
+    "permalink": "/docs/intro"
+  }
+}

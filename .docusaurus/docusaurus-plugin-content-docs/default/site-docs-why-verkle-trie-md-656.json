@@ -1,0 +1,20 @@
+{
+  "unversionedId": "why_verkle_trie",
+  "id": "why_verkle_trie",
+  "title": "Why Verkle Trie",
+  "description": "",
+  "source": "@site/docs/why_verkle_trie.md",
+  "sourceDirName": ".",
+  "slug": "/why_verkle_trie",
+  "permalink": "/docs/why_verkle_trie",
+  "draft": false,
+  "editUrl": "https://github.com/ethereum/verkle-dev-website/docs/why_verkle_trie.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Verkle Trie Documentation",
+    "permalink": "/docs/intro"
+  }
+}

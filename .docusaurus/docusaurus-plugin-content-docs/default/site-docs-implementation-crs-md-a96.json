@@ -1,0 +1,20 @@
+{
+  "unversionedId": "Implementation/crs",
+  "id": "Implementation/crs",
+  "title": "Generating the CRS",
+  "description": "",
+  "source": "@site/docs/Implementation/crs.md",
+  "sourceDirName": "Implementation",
+  "slug": "/Implementation/crs",
+  "permalink": "/docs/Implementation/crs",
+  "draft": false,
+  "editUrl": "https://github.com/ethereum/verkle-dev-website/docs/Implementation/crs.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "eip",
+    "permalink": "/docs/Implementation/eip"
+  }
+}

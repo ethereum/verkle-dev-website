@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "Implementation/crs",
+          "docs": [
+            {
+              "id": "Implementation/crs",
+              "path": "/docs/Implementation/crs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Implementation/eip",
+              "path": "/docs/Implementation/eip",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Implementation/summary",
+              "path": "/docs/Implementation/summary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Theory/dividing_on_zero",
+              "path": "/docs/Theory/dividing_on_zero",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Theory/multipoint",
+              "path": "/docs/Theory/multipoint",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Theory/summary",
+              "path": "/docs/Theory/summary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "why_verkle_trie",
+              "path": "/docs/why_verkle_trie",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/Implementation/crs",
+                "label": "Implementation/crs"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

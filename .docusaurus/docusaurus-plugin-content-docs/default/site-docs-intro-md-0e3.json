@@ -1,0 +1,24 @@
+{
+  "unversionedId": "intro",
+  "id": "intro",
+  "title": "Verkle Trie Documentation",
+  "description": "This documentation leans more towards the technical side and does make a a few assumptions on pre-requisite knowledge. The author will endeavour to make these assumptions apparent, no promises.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "editUrl": "https://github.com/ethereum/verkle-dev-website/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Theory",
+    "permalink": "/docs/Theory/summary"
+  },
+  "next": {
+    "title": "Why Verkle Trie",
+    "permalink": "/docs/why_verkle_trie"
+  }
+}
