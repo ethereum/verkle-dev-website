@@ -7,6 +7,7 @@ notes.md
 *.code-workspace
 .changelog
 .history
+build/
 
 node_modules
 .yarn
