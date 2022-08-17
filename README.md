@@ -4,6 +4,8 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### Installation
 
+*npm can also be used in place of yarn
+
 ```
 $ yarn
 ```
