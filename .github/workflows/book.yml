@@ -1,35 +1,50 @@
-name: github pages
+name: GitHub Pages
 
 on:
   push:
     branches:
-      - master
+      - main
+    paths:
+      - '.github/workflows/deploy.yml'
+      - 'website/**'
   pull_request:
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    permissions:
+      contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+    defaults:
+      run:
+        working-directory: website
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v1
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          mdbook-version: 'latest'
+          node-version: '14'
 
-      - name: Install mdbook-katex
-        uses: actions-rs/cargo@v1
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
         with:
-          command: install
-          args: mdbook-katex
-      
-      - run: mdbook build
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-website-
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+          publish_dir: ./website/build
