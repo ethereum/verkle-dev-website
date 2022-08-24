@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Verkle Trees',
-  tagline: 'Why Ethereum Should implement verkle trees',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Statelessness is coming to Ethereum',
+  url: 'verkle.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -49,7 +49,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Verkle Trees',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -59,10 +59,10 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/crate-crypto/verkle-trie-ref',
             label: 'GitHub',
             position: 'right',
           },
@@ -84,17 +84,10 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/xQ4dkKvR',
               },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+              
             ],
           },
           {
@@ -102,12 +95,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/crate-crypto/verkle-trie-ref',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ethereum Research. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
