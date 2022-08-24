@@ -4,32 +4,31 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Zero knowledge friendly',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Verkle Trees were designed with zero knowledge proving systems in mind.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Simple API',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The external API for verkle trees is minimalistic. Keys and Values are assumed to be 
+        32 bytes respectively.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Scalable',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Each inner node in a verkle tree has 256 children, as opposed to a hexary tree with 16 children.
+        The increase in node width does not significantly affect the proof size as it would in a hexary tree.
       </>
     ),
   },
