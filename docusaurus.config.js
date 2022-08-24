@@ -59,7 +59,9 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+
+            label: 'Docs',
+
           },
           {
             href: 'https://github.com/crate-crypto/verkle-trie-ref',
@@ -75,8 +77,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Introduction',
+                to: '/',
               },
             ],
           },

@@ -9,6 +9,9 @@ notes.md
 .history
 build/
 
+
+book
+
 node_modules
 .yarn
 package-lock.json
