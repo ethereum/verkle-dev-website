@@ -23,7 +23,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Scalable',
+    title: 'Scalability',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
