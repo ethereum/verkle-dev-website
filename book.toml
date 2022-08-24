@@ -1,8 +1,0 @@
-[book]
-authors = ["Kevaundray Wedderburn"]
-language = "en"
-multilingual = false
-src = "src"
-title = "Verkle Trie Documentation"
-
-[preprocessor.katex]
