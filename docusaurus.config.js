@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Verkle Trees',
   tagline: 'Statelessness is coming to Ethereum',
-  url: 'verkle.dev',
+  url: 'https://verkle.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
