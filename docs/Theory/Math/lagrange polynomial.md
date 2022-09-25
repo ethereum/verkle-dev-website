@@ -32,9 +32,12 @@ In practice, it is used a more poweful, efficient and simplest method than a vec
 
 #### KZG commitments
 
+*[https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html].*
+
 
 #### Pedersen vector commitment
 
+*[https://link.springer.com/content/pdf/10.1007/3-540-46766-1_9.pdf].*
 
 
 
