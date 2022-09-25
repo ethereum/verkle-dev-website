@@ -17,7 +17,14 @@ As mentioned above the interpolating polynomial is unique. This characteristic a
 
 ### Vector commitment and Verkle Tries
 
-KZG commitments
-Petersen vector commitment
+A commitment scheme allows one to commit to a chosen value (or statement) while keeping it hidden to others, with the ability to reveal the committed value later. (wiki) 
+In Verkle Tree, the commitment method is called vector commitment (Ethereum). A vector commitment allows to commit to an ordered sequences of values in such a way that is later possible to open the commitment only with the reference to a specific position. (Catalano, Fiore).  
+In practice, it is used a primitive more poweful, efficient and simplest than a vector commitment, called a polynomial commitment. Polynomial commitments let you hash and evalauted in any point the hashed polynomial (the polynomail can be found / defined with Lagrange interpolation), being the easiest to use KZG commitments and bulletprof-style commitments (Vitalik).  
+
+
+#### KZG commitments
+
+
+#### Pedersen vector commitment
 
 
