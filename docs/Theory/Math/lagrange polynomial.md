@@ -38,7 +38,7 @@ The Kate commitment scheme is designed as a polynomial commitment, where it also
 ##### Pedersen vector commitment
 
 *"It is shown how to distribute a secret to n persons such that each person can verify that he has received correct information about the secret without talking with other persons. Any* $k$ *of these persons can later find the secret* $1<=k<=n$ , *whereas fewer than* $k$ *persons get no information about the secret."*
-*[https://link.springer.com/content/pdf/10.1007/3-540-46766-1_9.pdf].*
+*[https://link.springer.com/content/pdf/10.1007/3-540-46766-1_9.pdf]. (Torben Pryds Pedersen)*
 
 
 Here you will find, that all verification of shares and the scheme are based in Lagrange Polynomial (section 4).
