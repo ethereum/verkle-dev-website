@@ -30,14 +30,18 @@ A vector commitment allows to commit to an ordered sequences of values in such a
 In practice, it is used a more poweful, efficient and simplest method than a vector commitment, called polynomial commitment. Polynomial commitments let you hash and evalaute in any point the hashed polynomial (the polynomail can be found-defined with Lagrange interpolation). The two polynomial commitment schemes easiest to be used are: **KZG and bulletprof-style commitments** *[https://vitalik.ca/general/2021/06/18/verkle.html]*.
 
 
-#### KZG commitments
+##### KZG commitments
 
-*[https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html].*
+The Kate commitment scheme is designed as a polynomial commitment, where it also allows a vector commitment. A vector commitment commits to a vector $a_0,...,a_{n-1}$ and lets you prove that you committed to $a_i$ for some $i$. This could be reproduced using the Kate commitment scheme, which is a polynomial $p(X)$ where for all $i$, $p(i)= a_i$. This polynomial could be computed using Lagrange interpolation. *[https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html].*
 
 
-#### Pedersen vector commitment
+##### Pedersen vector commitment
 
+*"It is shown how to distribute a secret to n persons such that each person can verify that he has received correct information about the secret without talking with other persons. Any* $k$ *of these persons can later find the secret* $1<=k<=n$ , *whereas fewer than* $k$ *persons get no information about the secret."*
 *[https://link.springer.com/content/pdf/10.1007/3-540-46766-1_9.pdf].*
+
+
+Here you will find, that all verification of shares and the scheme are based in Lagrange Polynomial (section 4).
 
 
 
