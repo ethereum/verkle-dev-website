@@ -15,7 +15,7 @@ $$
 \mathcal{l_j}(x) = \prod_{m \neq j, m >= 0}\frac{x -x_m}{x_j - x_m}
 $$
 
-As mentioned above the interpolating polynomial is unique. This characteristic allows uses in cryptography such as: Shamir's secret sharing scheme and KZC polynomial commitmens (Kate commitment) *[https://en.m.wikipedia.org/wiki/Lagrange_polynomial]*
+As mentioned above the interpolating polynomial is unique. This characteristic allows uses in cryptography such as: Shamir's secret sharing scheme and KZG polynomial commitmens (Kate commitment) *[https://en.m.wikipedia.org/wiki/Lagrange_polynomial]* *
 
 ## Uses
 
