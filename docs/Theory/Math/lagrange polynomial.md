@@ -25,7 +25,7 @@ A commitment scheme allows one to commit to a chosen value (or statement) while 
 
 A vector commitment allows to commit to an ordered sequences of values in such a way that is later possible to open the commitment only with the reference to a specific position. *[https://eprint.iacr.org/2011/495.pdf], (Catalano, Fiore)*.
 
-In Verkle Tree, the commitment method is called vector commitment. In practice, it is used a more poweful, efficient and simplest method than a vector commitment, called polynomial commitment. Polynomial commitments let you hash and evalaute in any point the hashed polynomial (the polynomail can be found-defined with Lagrange interpolation). The two polynomial commitment schemes easiest to be used are: **KZG and bulletprof-style commitments** *[https://vitalik.ca/general/2021/06/18/verkle.html]*, *[https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf]*.
+In Verkle Tree <sup>3,4</sup>, the commitment method is called vector commitment. In practice, it is used a more poweful, efficient and simplest method than a vector commitment, called polynomial commitment. Polynomial commitments let you hash and evalaute in any point the hashed polynomial (the polynomail can be found-defined with Lagrange interpolation). The two polynomial commitment schemes easiest to be used are: **KZG and bulletprof-style commitments** *[https://vitalik.ca/general/2021/06/18/verkle.html] <sup>3</sup>*, *[https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf] <sup>4</sup>*.
 
 ##### KZG commitments
 
