@@ -1,1 +1,0 @@
-# Why Verkle Trie
