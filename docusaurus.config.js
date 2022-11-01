@@ -90,7 +90,7 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/',
+                to: '/docs/intro',
               },
             ],
           },
@@ -99,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/xQ4dkKvR',
+                href: 'https://discord.com/channels/595666850260713488/824798757618188339',
               },
               
             ],
