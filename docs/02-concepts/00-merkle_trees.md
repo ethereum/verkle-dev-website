@@ -52,7 +52,7 @@ We can achieve this with a **Merkle proof**.
 
 <p align="center">Figure 2. The Merkle proof (in yellow)<sup>2</sup></p>
 
-The Merkle proof contains all the sister nodes which are required to reconstruct the Merkle root. In our diagram our Merkle proof will be $[h_2, h_8, h_{13}]$. 
+The Merkle proof contains all of the sister nodes which are required to reconstruct the Merkle root. In our diagram our Merkle proof will be $[h_2, h_8, h_{13}]$. 
 
 Visually we are walking the path from the leaf node we are attempting to prove, to the root node. So been given the position (within the original transaction set) and supposed contents of $F_3$, and the Merkle proof, our steps to reconstruct the Merkle root would be:
 1. Get $h_3 = H(T)$
