@@ -1,0 +1,1 @@
+# Verkle Trie Structure
