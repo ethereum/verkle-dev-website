@@ -1,2 +1,0 @@
-# Patricia Merkle Trie
-

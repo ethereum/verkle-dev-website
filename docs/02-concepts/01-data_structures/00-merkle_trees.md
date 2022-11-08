@@ -4,7 +4,7 @@ Feel free to skip this section if you are well versed with Merkle trees.
 
 ## What is a merkle tree?
 
-Merkle trees are a data structure with the key benefit of being efficient (but not efficient enough for Ethereum's scaling ambitions) to prove that a certain piece of data exists in the Merkle tree.
+Merkle trees are a data structure with the key benefit of being efficient (but not efficient enough for Ethereum's scaling ambitions) to prove that a certain piece of data exists in the Merkle tree. They enable efficient verification of the contents of a large dataset (i.e. transactions, files). 
 
 ### Creating a Merkle tree
 
@@ -28,7 +28,7 @@ The important properties of a cryptographic hash function for a Merkle tree are:
 
 To create the first or bottommost layer of **inner nodes**, we take two adjacent leaf nodes and apply the cryptographic hash function again to the pair. So in the diagram, the leaf nodes $h_0=H(F_0)$ and $h_1=H(F_1)$ are concatenated to provide the input to the hash function, and the output $H(h_0, h_1)$ becomes the inner node $h_8$ that is the parent to these two leaf nodes. We repeat this process for every pair of leaf nodes, hashing 8 leaf nodes into 4 inner nodes. 
 
-To create the next layer of inner nodes, we repeat this process with the layer of inner nodes we just generated. With each layer we halve the number of inner nodes. Eventually we reach a layer with only 1 node. We stop here and call this single node the **merkle root**. The merkle root is a 32-byte string (in the case of Keccak256) which commits all the original data elements.
+To create the next layer of inner nodes, we repeat this process with the layer of inner nodes we just generated. With each layer we halve the number of inner nodes. Eventually after successive rounds of hashing, we reach a layer with only 1 node. We stop here and call this single node the **merkle root**. The merkle root is a 32-byte string (in the case of Keccak256) which commits all the original data elements.
 
 <br/>
 
@@ -86,6 +86,4 @@ If we stored a million leaf nodes in a 3-ary Merkle tree, our Merkle proofs woul
 
 <br/>
 
-1. Image modified from [Kuszmaul's paper](https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf)
-2. Image modified from [Kuszmaul's paper](https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf)
-3. Image from [Kuszmaul's paper](https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf)
+1, 2, 3. Images modified from [Kuszmaul's paper](https://math.mit.edu/research/highschool/primes/materials/2018/Kuszmaul.pdf)
