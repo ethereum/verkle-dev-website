@@ -2,9 +2,9 @@
 
 The Merkle Patricia Trie currently used in Ethereum is a modified fusion of the merkle tree and [patricia trie](https://en.wikipedia.org/wiki/Radix_tree) (also known as a radix tree or prefix tree).
 
-It turns out that merkle trees are great for verifying a large list of static data elements, but not so great for storing the Ethereum world state which changes frequently. With a merkle tree, a single change requires rehashing the entire tree. For 1 million data elements in a simple binary merkle tree, this would require $\approx$ 1 million hash operations. In reality, the Ethereum world state consists of much more than 1 million data elements. 
+It turns out that merkle trees are great for verifying a large list of static data elements, but not as great for storing the Ethereum world state. In a merkle tree, a single leaf node change requires rehashing every parent node, an $O(\log N)$ operation. We can do better and take advantage of the fact that the world state is a set of key-value pairs where the key is a fixed-size 160-bit string (the address).
 
-On the other hand the patricia trie is more suited for a rapidly changing set of key-value pairs (i.e. the Ethereum world state). However it lacks the cryptographic guarantees of data integrity that the Merkle proof provides.
+A patricia trie, in which the key is encoded nibble-by-nibble into the path to the leaf node, enables us (with some adjustments) to bound and reduce the number of parent leaves. It also offers convenient methods of accessing specific key-value pairs. However it lacks the cryptographic guarantees of data integrity that the Merkle proof provides.
 
 So by merging the merkle tree with the patricia trie, the Merkle Patricia Trie is able to achieve:
 - Efficient lookup and updates of data elements stored as key-value pairs
