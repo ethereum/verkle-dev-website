@@ -13,6 +13,7 @@ Starting from what we know, key similarities between the Merkle Patricia Trie an
 Some key differences are:
 - A Verkle Trie involves a single flat trie structure, whereas the Merkle Patricia Trie involves a nested 'Merkle Patricia Tries in a Merkle Patricia Trie' scheme.
 - The Pedersen commitment is used to create cryptographic commitments instead of the keccak256 hash function.
+- We switch from 20-byte keys in the Merkle Patricia Trie to 32-byte keys in the Verkle Trie.
 
 ## Basic Overview
 
@@ -23,7 +24,7 @@ The root node is a special inner node with no parents, and is the ancestor of ev
 
 <br/>
 
-1. This is named as `extension_and_suffix_tree` in the [EIP](https://notes.ethereum.org/@vbuterin/verkle_tree_eip)
+1. This is named as `extension_and_suffix_tree` in the [EIP](https://notes.ethereum.org/@vbuterin/verkle_tree_eip), and is also referred to as an extension node.
 2. This is named as `main_tree` in the [EIP](https://notes.ethereum.org/@vbuterin/verkle_tree_eip)
 
 We have taken these names from the [Python specification](https://github.com/ethereum/research/blob/master/verkle_trie_eip/verkle_trie.py).
@@ -31,7 +32,7 @@ We have taken these names from the [Python specification](https://github.com/eth
 
 ## Suffix nodes
 
-![merkle_00](/img/suffix_node.png)
+![merkle_00](/img/suffix_node_0.png)
 <p align="center">Figure 1. Suffix node</p>
 
 Suffix nodes sit at the bottom of the verkle trie, and directly store values. Each suffix node is uniquely identified by a **31-byte stem**, and can store up to 256 values (one for each possible integer value of the single suffix byte). 32-byte keys can be split into a 31-byte stem and a 1-byte suffix. All keys that contain the identical 31-byte stem will have their values stored in the same suffix node. 
