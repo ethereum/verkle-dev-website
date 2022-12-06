@@ -33,4 +33,4 @@ In the reveal phase, the prover shares $r$ and $m$ so that the verifier can veri
 
 Thus more formal descriptions of a cryptographic commitment scheme refer to $C = commit(r, m)$.
 
-Committing to an additional random number $r$ in addition to a secret value $m$ significantly enhances the hiding and binding properties of a commitment scheme. Someone attempting to guess $m$ from a public commitment $C$, would need to correctly guess both $r$ and $m$.
+Committing to an additional random number $r$ in addition to a secret value $m$ significantly enhances the hiding and binding properties of a commitment scheme. Someone attempting to guess $m$ from a public commitment $C$, would need to correctly guess both $r$ and $m$. This stops brute force attacks on $m$, and conceals repeated use of values for $m$.

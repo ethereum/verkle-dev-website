@@ -10,7 +10,9 @@ Using a [carefully designed addition (+) operation](https://andrea.corbellini.na
 
 We can extend the addition operation for elliptic curve points to define scalar multiplication:
 
-$m*P = \underbrace{P + P + \cdots + P}_{m\ \text{times}}$, where $n$ is an integer > 0 and $P$ is an elliptic curve point.
+$m*P = \underbrace{P + P + \cdots + P}_{m\ \text{times}}$, where $m$ is an integer > 0 and $P$ is an elliptic curve point.
+
+The above expression suggests that scalar multiplication in linear time operation. However we can use the [double-and-add algorithm](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/#scalar-multiplication) to execute scalar multiplication in $O(\log{N})$ time.
 
 ## Multiscalar multiplication
 
@@ -35,7 +37,7 @@ This transforms the graph from a continuous curve to a discrete set of points.
 
 The important mathematical result here is that elliptic curve points over a finite field still form an [abelian group](./00-group.md/#abelian-group).
 
-## Elliptic curve discrete logarithm problem
+## Elliptic curve discrete logarithm problem (ECDLP)
 
 For the scalar multiplication $Q = n*P$ 
 
@@ -45,6 +47,14 @@ Where $P$ is an elliptic curve point over $\mathbb{F}_p$, $n$ is a scalar $\in \
 - Given $Q$ and $P$, it is 'hard' to find $n$ => Discrete logarithm problem, exponential time algorithms for the general case
 
 This mathematical result forms a [trapdoor function](https://cryptography.fandom.com/wiki/Trapdoor_function), and is a core security assumption of applications using elliptic curve cryptography. 
+
+The ECDLP is a 'harder' problem than the general discrete logarithm problem (DLP) in the sense that the [fastest known general-purpose algorithm for the ECDLP has an exponential time complexity, whereas the fastest known general-purpose algorithm for the DLP has a subexponential time complexity](https://link.springer.com/chapter/10.1007/978-3-662-49387-8_1#Abs1). Hence cryptographic keys based on ECDLP can be significantly smaller than keys based on DLP, and still be more secure.
+
+## Elliptic curve forms
+
+Elliptic curves can be mathematically expressed in [multiple forms](https://www.cosic.esat.kuleuven.be/bcrypt/lecture%20slides/wouter.pdf) - Weierstrass, Montgomery and Edwards forms are commonly used. The $y^2 = x^3 + ax + b$ where $a, b \in \mathbb{F}_p$ expression we have previously referred to represents the Weierstrass form. An elliptic curve in Weierstrass form can be converted into Montgomery and Edwards forms.
+
+Edwards form is frequently preferred in software implementations because addition and scalar multiplication operations are [more efficient](https://en.wikipedia.org/wiki/Table_of_costs_of_operations_in_elliptic_curves), and Weierstrass form implementations suffer from [vulnerability to side-channel attacks](https://link.springer.com/chapter/10.1007/3-540-45664-3_24).
 
 ## More Reading
 
