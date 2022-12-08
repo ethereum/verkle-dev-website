@@ -12,7 +12,7 @@ We can extend the addition operation for elliptic curve points to define scalar 
 
 $m*P = \underbrace{P + P + \cdots + P}_{m\ \text{times}}$, where $m$ is an integer > 0 and $P$ is an elliptic curve point.
 
-The above expression suggests that scalar multiplication in linear time operation. However we can use the [double-and-add algorithm](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/#scalar-multiplication) to execute scalar multiplication in $O(\log{N})$ time.
+The above expression suggests that scalar multiplication is a linear time operation. However we can use the [double-and-add algorithm](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/#scalar-multiplication) to execute scalar multiplication in $O(\log{N})$ time.
 
 ## Multiscalar multiplication
 
