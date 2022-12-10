@@ -52,9 +52,11 @@ The ECDLP is a 'harder' problem than the general discrete logarithm problem (DLP
 
 ## Elliptic curve forms
 
-Elliptic curves can be mathematically expressed in [multiple forms](https://www.cosic.esat.kuleuven.be/bcrypt/lecture%20slides/wouter.pdf) - Weierstrass, Montgomery and Edwards forms are commonly used. The $y^2 = x^3 + ax + b$ where $a, b \in \mathbb{F}_p$ expression we have previously referred to represents the Weierstrass form. An elliptic curve in Weierstrass form can be converted into Montgomery and Edwards forms.
+Elliptic curves can be mathematically expressed in [multiple forms](https://www.cosic.esat.kuleuven.be/bcrypt/lecture%20slides/wouter.pdf) - Weierstrass, Montgomery and twisted Edwards forms are commonly used in cryptographic applications. The $y^2 = x^3 + ax + b$ where $a, b \in \mathbb{F}_p$ expression we have previously referred to represents the Weierstrass form.
 
-Edwards form is frequently preferred in software implementations because addition and scalar multiplication operations are [more efficient](https://en.wikipedia.org/wiki/Table_of_costs_of_operations_in_elliptic_curves), and Weierstrass form implementations suffer from [vulnerability to side-channel attacks](https://link.springer.com/chapter/10.1007/3-540-45664-3_24).
+Montgomery form ($by^2 = x^3 + ax^2 + x$, where $a, b \in \mathbb{F}_p$) and twisted Edwards form ($ax^2 + y^2 = 1 + dx^2y^2$, where $a, d \in \mathbb{F}_p \setminus \{0\}$) are frequently preferred in practical software implementations because addition and scalar multiplication operations are [more efficient](https://en.wikipedia.org/wiki/Table_of_costs_of_operations_in_elliptic_curves), and Weierstrass form implementations suffer from [vulnerability to side-channel attacks](https://link.springer.com/chapter/10.1007/3-540-45664-3_24).
+
+Every Montgomery form curve can be transformed into a mathematically equivalent twisted Edwards form curve, this relationship is known as [birational equivalence](https://en.wikipedia.org/wiki/Birational_geometry#Birational_equivalence_and_rationality). However over the finite field $\mathbb{F}_p$, not every Weierstrass form curve can be transformed into a twisted Edwards curve - only a [small subset of Weierstrass curves can be transformed into a twisted Edwards curve in $\mathbb{F}_p$](https://eprint.iacr.org/2008/013.pdf).
 
 ## More Reading
 
