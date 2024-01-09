@@ -56,7 +56,7 @@ The Merkle proof contains all of the sister nodes which are required to reconstr
 
 Visually we are walking the path from the leaf node we are attempting to prove, to the root node. So been given the position (within the original transaction set) and supposed contents of $F_3$, and the Merkle proof, our steps to reconstruct the Merkle root would be:
 1. Get $h_3 = H(T)$
-2. Get $h_9 = H(h_2, h_9)$
+2. Get $h_9 = H(h_2, h_3)$
 3. Get $h_{12} = H(h_8, h_9)$
 4. Get Merkle root $= h_{14} = H(h_{12}, h_{13})$
 
